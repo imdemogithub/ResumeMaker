@@ -318,7 +318,7 @@ def login(request):
     return JsonResponse(data)
     # return redirect(login_page)
 
-# logout
+# logout functionality
 def logout(request):
     if 'email' in request.session:
         del request.session['email']
